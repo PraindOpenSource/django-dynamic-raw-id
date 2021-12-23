@@ -2,6 +2,10 @@ from django.conf.urls import *
 
 from dynamic_raw_id.views import label_view
 
+from django.urls import re_path
+def url(regex, view, kwargs=None, name=None):
+    return re_path(regex, view, kwargs, name)
+
 urlpatterns = [
     url(
         r"^(?P<app_name>[\w-]+)/(?P<model_name>[\w-]+)/multiple/$",
