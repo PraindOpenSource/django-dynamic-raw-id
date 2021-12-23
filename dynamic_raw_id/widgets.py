@@ -3,7 +3,7 @@ from django.conf import settings
 from django.contrib.admin import widgets
 from django.core.exceptions import ImproperlyConfigured
 from django.urls import reverse
-from django.utils.encoding import force_text
+from django.utils.encoding import force_str as force_text
 
 
 class DynamicRawIDImproperlyConfigured(ImproperlyConfigured):
